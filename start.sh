@@ -11,8 +11,7 @@ darkhttpd /webui --port 8080 --chroot --daemon --no-listing --log /dev/null
 touch /conf/aria2.session
 cp /conf/aria2.conf.tmpl /conf/aria2.conf
 
-# RPC settings
-echo "rpc-listen-port=${RPC_PORT:=6800}" >> /conf/aria2.conf
+# RPC secret
 echo "rpc-secret=${RPC_SECRET:=secret}" >> /conf/aria2.conf
 
 # Download settings
