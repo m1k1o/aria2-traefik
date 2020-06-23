@@ -32,6 +32,12 @@ At the time of creating this repository, Webui does not seem to be in active dev
       - "traefik.http.routers.aria2.rule=Host(`aria2.example.com`) && Path(`/jsonrpc`)"
       - "traefik.http.routers.aria2.service=aria2-frontend"
 ```
+## User settings
+
+Set user and group, that will own downloaded files.
+
+* PUID: 1000
+* PGID: 1000
 
 ## rpc settings
 
