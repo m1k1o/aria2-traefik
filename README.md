@@ -77,7 +77,6 @@ These environment variables, with their default values, are supported:
 * MAX_OVERALL_UPLOAD_LIMIT: 32K
 * MAX_CONCURRENT_DOWNLOADS: 10
 * MAX_CONNECTION_PER_SERVER: 16
-* MIN_SPLIT_SIZE: 10M
 * SPLIT: 10
 
 More information [here](https://aria2.github.io/manual/en/html/aria2c.html).
