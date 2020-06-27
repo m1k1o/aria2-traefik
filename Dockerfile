@@ -1,4 +1,4 @@
-FROM alpine:edge
+FROM alpine:3.6
 
 ENV PUID 1000
 ENV PGID 1000
