@@ -169,12 +169,10 @@
       .constant("$pageSize", 11)
       .constant("$authconf", {
         host: location.protocol.startsWith("http") ? location.hostname : "localhost",
-        path: RPC_PATH || "/jsonrpc",
-        port: RPC_PORT,
+        path: "/jsonrpc",
+        port: 6800,
         encrypt: !1,
-        auth: {
-          token: RPC_SECRET
-        },
+        auth: {},
         directURL: ""
       })
       .constant("$enable", {

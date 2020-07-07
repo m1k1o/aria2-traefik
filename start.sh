@@ -9,9 +9,6 @@ echo "  'encrypt': location.protocol === 'https:'," >> /webui/conf.js
 echo "  'auth': { 'token':'${RPC_SECRET:=secret}' }" >> /webui/conf.js
 echo '}));' >> /webui/conf.js
 
-# Legacy config
-echo 'const RPC_PATH = "", RPC_PORT = "", RPC_SECRET = "";' >> /webui/conf.js
-
 darkhttpd /webui --port 8080 --chroot --daemon --no-listing --log /dev/null
 
 # aria2c configuration
