@@ -17,7 +17,6 @@ At the time of creating this repository, Webui does not seem to be in active dev
     restart: unless-stopped
     environment:
       TZ: Europe/Bratislava
-      RPC_PATH: /jsonrpc
       RPC_SECRET: something_random
     volumes:
       - ./downloads:/downloads
@@ -41,9 +40,8 @@ Set user and group, that will own downloaded files.
 
 ## rpc settings
 
-Websocket path and secret can be adjusted. For secret, create something random, using e.g. `openssl rand -base64 32`.
+Websocket secret can be adjusted. Create something random, using e.g. `openssl rand -base64 32`.
 
-* RPC_PATH: /jsonrpc
 * RPC_SECRET: something_random
 
 Keep in mind, that this **secret** will be shared with client. Additional layer of security would be needed:

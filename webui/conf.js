@@ -1,4 +1,2 @@
-const RPC_HOST = "";
-const RPC_PATH = "";
-const RPC_PORT = "";
-const RPC_SECRET = "";
+// Legacy config
+const RPC_PATH = "", RPC_PORT = "", RPC_SECRET = "";
