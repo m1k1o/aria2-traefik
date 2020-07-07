@@ -2983,7 +2983,7 @@
           }
         ]),
           $.directive("textarea", C.a),
-          "serviceWorker" in navigator &&
+          /*"serviceWorker" in navigator &&
             "https:" === location.protocol &&
             window.addEventListener("load", () => {
               navigator.serviceWorker
@@ -2994,7 +2994,7 @@
                 .catch(e => {
                   console.log("SW registration failed: ", e);
                 });
-            }),
+            }),*/
           e(function() {
             String.prototype.startsWith ||
               Object.defineProperty(String.prototype, "startsWith", {
